@@ -28,7 +28,7 @@ console.log(soma(2, 2));
 const resultado = soma(4, 2);
 console.log(resultado);
 
-//! Função anonima --------------------
+//! Função anonima ------------------------
 //* Colocar uma função dentro de uma variavel
 const raiz = function (n) {
     return n ** 0.5;
@@ -36,7 +36,7 @@ const raiz = function (n) {
 
 console.log(raiz(9));
 
-//! Arrow Function -------------------------------
+//! Arrow Function ------------------------
 //* Simplifica funçoes de codigo curto
 const quadrada = n => n ** 0.5;
 
