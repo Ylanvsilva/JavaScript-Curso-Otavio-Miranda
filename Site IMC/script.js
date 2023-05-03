@@ -63,7 +63,7 @@ function criaP () {
     return p;
     //p.classList.add('paragrafo-resultado'); //* Adiciona uma classe nessa lista de classes (p), se nao houver, ele criara o atributo class e adicionara
     //p.innerHTML = 'Qualquer coisa'; //* Foi colocado um valor dentro de p
-}
+};
 
 function setResultado (msg, isValid) { //* Função criada com a finalidade de colocar algo dentro da div com o id resultado
     const resultado = document.querySelector('#resultado');
@@ -77,4 +77,4 @@ function setResultado (msg, isValid) { //* Função criada com a finalidade de c
     p.innerHTML = msg; //* Para mandar a mensagem da function form no console
     //resultado.innerHTML = `<p>${msg}</p>`; //* O que for mandado aqui sera mostrado no HTML do resultado
     resultado.appendChild(p); //* Inseri um elemento, um filho dentro desse elemento, nesse caso p
-} //* Toda vez que eu quiser mandar uma mensagem, escrevo algo para o parametro (msg) que ele adiciona no meu HTML
+}; //* Toda vez que eu quiser mandar uma mensagem, escrevo algo para o parametro (msg) que ele adiciona no meu HTML
