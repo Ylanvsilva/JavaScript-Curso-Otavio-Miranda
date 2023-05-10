@@ -64,3 +64,4 @@ function relogio() {
         } 
     });
 }
+relogio();
