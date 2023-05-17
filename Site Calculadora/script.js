@@ -68,9 +68,9 @@ function criaCalculadora () {
             document.addEventListener('click', e => { //* Se for utilizado arrow function vai sempre ter o (this) travado em quem criou o elemento
                 const el = e.target;
 
-                if (el.classList.contains('btn-num')) { //* Se o elemento contem a classe (btn-num)
+                if (el.classList.contains('btn-num')) { 
+                    //* Se o elemento contem a classe (btn-num)
                     //* Fazer um link com o que esta no botao e vai pro display
-                    
                     //* Criando outro metodo
                     //* Quando um metodo e chamado dentro de outro metodo e necessario o uso da palavra (this)
                     //* InnerText -> tudo que estiver dentro da tag
@@ -88,7 +88,10 @@ function criaCalculadora () {
                 if (el.classList.contains('btn-eq')) { //* Se o botao clicado for o (btn-eq)
                     this.realizaConta();
                 }
-            }); //*.bind(this)); Ao inves de usar o seu (this) use o meu (this -> calculadora)
+
+                this.display.focus();
+            }); 
+            //*.bind(this)); Ao inves de usar o seu (this) use o meu (this -> calculadora)
         },
 
         btnParaDisplay(valor) {
